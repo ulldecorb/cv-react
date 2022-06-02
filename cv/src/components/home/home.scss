@@ -9,11 +9,11 @@
         outline: 2px solid white;;
     }
 
-    &__profile-box {
+    &__control-box {
 
         height: 100%;
         width: 100%;
-        background-color: pink;
+        background-color: rgb(253, 253, 253);
 
         display: flex;
         justify-content: center;
@@ -21,19 +21,41 @@
     }
 }
 
-.profile-box {
+.control-box {
     &__image {
-        height: 300px;
-        width: 300px;
+        min-height: 300px;
+        min-width: 300px;
         border-radius: 50%;
-        background-color: yellow;
+        background-color: rgb(212, 212, 212);
 
         display: flex;
         justify-content: center;
         align-items: center;
 
         position: absolute;
-        top: calc((100% / 4) - 150px);
-        left: calc((100% / 2) - 150px);
+        top: calc((100% / 4) - 120px);
+        left: calc((100% / 2) - 160px);
+    }
+
+    &__navbar-box {
+        margin: 20px 0 0 0;
+        width: 100vw;
+        height: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.7rem;
+        background-color: orange;
+    }
+
+    &__navbar-title {
+        border-radius: 1rem;
+        padding: 0.4rem;
+        cursor: pointer;
+        margin: 0 10px;
+
+        &:hover {
+            background-color: white;
+        }
     }
 }

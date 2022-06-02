@@ -13,10 +13,10 @@
   outline: 2px solid white;
 }
 
-.home__profile-box {
+.home__control-box {
   height: 100%;
   width: 100%;
-  background-color: pink;
+  background-color: #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,11 +28,11 @@
           align-items: center;
 }
 
-.profile-box__image {
-  height: 300px;
-  width: 300px;
+.control-box__image {
+  min-height: 300px;
+  min-width: 300px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: #d4d4d4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +43,34 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: calc((100% / 4) - 150px);
-  left: calc((100% / 2) - 150px);
+  top: calc((100% / 4) - 120px);
+  left: calc((100% / 2) - 160px);
+}
+
+.control-box__navbar-box {
+  margin: 20px 0 0 0;
+  width: 100vw;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.7rem;
+  background-color: orange;
+}
+
+.control-box__navbar-title {
+  border-radius: 1rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.control-box__navbar-title:hover {
+  background-color: white;
 }
 /*# sourceMappingURL=home.css.map */
