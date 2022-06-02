@@ -1,3 +1,39 @@
-div {
+.home {
+    width: 100vw;
+    height: 100vh;
     background-color: red;
+    
+    &__navbar {
+        display: flex;
+        justify-content: space-around;
+        outline: 2px solid white;;
+    }
+
+    &__profile-box {
+
+        height: 100%;
+        width: 100%;
+        background-color: pink;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.profile-box {
+    &__image {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: yellow;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: calc((100% / 4) - 150px);
+        left: calc((100% / 2) - 150px);
+    }
 }

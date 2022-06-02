@@ -1,4 +1,49 @@
-div {
+.home {
+  width: 100vw;
+  height: 100vh;
   background-color: red;
+}
+
+.home__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  outline: 2px solid white;
+}
+
+.home__profile-box {
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-box__image {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: calc((100% / 4) - 150px);
+  left: calc((100% / 2) - 150px);
 }
 /*# sourceMappingURL=home.css.map */
