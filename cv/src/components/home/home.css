@@ -1,6 +1,6 @@
 .home {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #d7dadf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,6 +105,8 @@
   padding: 0.4rem;
   cursor: pointer;
   margin: 0 10px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .control-box__navbar-title:hover {
@@ -112,9 +114,12 @@
 }
 
 .profile-box__article {
-  background-color: red;
+  outline: 1px solid grey;
   width: 100%;
   position: absolute;
   display: none;
+  padding: 20px;
+  -webkit-transition: display 1s;
+  transition: display 1s;
 }
 /*# sourceMappingURL=home.css.map */

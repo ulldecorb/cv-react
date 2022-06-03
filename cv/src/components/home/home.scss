@@ -1,6 +1,6 @@
 .home {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(215, 218, 223);
     display: flex;
     flex-direction: column;
@@ -64,6 +64,7 @@
         padding: 0.4rem;
         cursor: pointer;
         margin: 0 10px;
+        transition: background-color 0.5s;
 
         &:hover {
             background-color: white;
@@ -73,9 +74,11 @@
 
 .profile-box {
     &__article {
-        background-color: red;
+        outline: 1px solid grey;
         width: 100%;
         position: absolute;
         display: none;
+        padding: 20px;
+        transition: display 1s;
     }
 }
