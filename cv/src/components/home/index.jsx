@@ -28,11 +28,11 @@ function Home({ cv }) {
       </section>
 
       <section className="home__profile-box">
-        <article id="about" className="profile-box__about">{cv.aboutMe.description}</article>
-        <article id="skills" className="profile-box__skills">bla</article>
-        <article id="work" className="profile-box__work">{cv.workExperience[0].article}</article>
-        <article id="languages" className="profile-box__languages">{cv.languages.catalan}</article>
-        <article id="education" className="profile-box__education">{cv.education[0].article}</article>
+        <article id="about" className="profile-box__article">{cv.aboutMe.description}</article>
+        <article id="skills" className="profile-box__article">bla</article>
+        <article id="work" className="profile-box__article">{cv.workExperience[0].article}</article>
+        <article id="languages" className="profile-box__article">{cv.languages.catalan}</article>
+        <article id="education" className="profile-box__article">{cv.education[0].article}</article>
       </section>
 
     </main>
