@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom';
 import './home.css';
 
 function Home({ cv }) {
-  const showProfiles = (e) => {
+  const showProfile = (e) => {
     const articles = document.getElementById('profile').children;
     for (let i = 0; i < articles.length; i += 1) {
       articles[i].style.display = 'none';
     }
-
     const id = e.target.id.split('-')[0];
     const node = document.getElementById(id);
     node.style.display = 'flex';
   };
+
   const hideProfiles = (e) => {
     const { id } = e.target;
-    const x = document.getElementById(id);
-    x.style.display = 'none';
+    const box = document.getElementById(id);
+    box.style.display = 'none';
   };
 
   return (
@@ -35,20 +35,20 @@ function Home({ cv }) {
           photo
         </article>
         <nav className="control-box__navbar-box">
-          <div id="about-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfiles(e)}>ABOUT ME</div>
-          <div id="skills-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfiles(e)}>SKILLS</div>
-          <div id="work-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfiles(e)}>WORK EXPERIENCE</div>
-          <div id="languages-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfiles(e)}>LANGUAGES</div>
-          <div id="education-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfiles(e)}>EDUCATION</div>
+          <div id="about-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>ABOUT ME</div>
+          <div id="skills-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>SKILLS</div>
+          <div id="work-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>WORK EXPERIENCE</div>
+          <div id="languages-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>LANGUAGES</div>
+          <div id="education-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>EDUCATION</div>
         </nav>
       </section>
 
-      <section id="profile" className="home__profile-box">
-        <article id="about" className="profile-box__article" onMouseLeave={(e) => hideProfiles(e)}>{cv.aboutMe.description}</article>
-        <article id="skills" className="profile-box__article" onMouseLeave={(e) => hideProfiles(e)}>bla</article>
-        <article id="work" className="profile-box__article" onMouseLeave={(e) => hideProfiles(e)}>{cv.workExperience[0].article}</article>
-        <article id="languages" className="profile-box__article" onMouseLeave={(e) => hideProfiles(e)}>{cv.languages.catalan}</article>
-        <article id="education" className="profile-box__article" onMouseLeave={(e) => hideProfiles(e)}>{cv.education[0].article}</article>
+      <section id="profile" className="home__profile-box" onMouseLeave={(e) => hideProfiles(e)}>
+        <article id="about" className="profile-box__article">{cv.aboutMe.description}</article>
+        <article id="skills" className="profile-box__article">bla</article>
+        <article id="work" className="profile-box__article">{cv.workExperience[0].article}</article>
+        <article id="languages" className="profile-box__article">{cv.languages.catalan}</article>
+        <article id="education" className="profile-box__article">{cv.education[0].article}</article>
       </section>
 
     </main>

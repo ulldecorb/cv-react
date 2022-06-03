@@ -73,12 +73,25 @@
 }
 
 .profile-box {
+    display: none;
+
     &__article {
         outline: 1px solid grey;
         width: 100%;
         position: absolute;
         display: none;
         padding: 20px;
-        transition: display 1s;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .control-box {
+        &__navbar-box {
+            font-size: 0.6rem;
+        }
+
+        &__navbar-title {
+            margin: 0 5px;
+        }
     }
 }

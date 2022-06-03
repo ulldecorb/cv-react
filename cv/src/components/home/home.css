@@ -113,13 +113,24 @@
   background-color: white;
 }
 
+.profile-box {
+  display: none;
+}
+
 .profile-box__article {
   outline: 1px solid grey;
   width: 100%;
   position: absolute;
   display: none;
   padding: 20px;
-  -webkit-transition: display 1s;
-  transition: display 1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .control-box__navbar-box {
+    font-size: 0.6rem;
+  }
+  .control-box__navbar-title {
+    margin: 0 5px;
+  }
 }
 /*# sourceMappingURL=home.css.map */
