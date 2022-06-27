@@ -23,7 +23,7 @@ function Minimal({ cv }) {
 
       <section className="home__control-box">
         <nav className="minimal-control-box__navbar-box">
-          <div id="about-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>ABOUT ME</div>
+          <div id="about-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>AUSIAS BERTRAN</div>
           <div id="skills-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>SKILLS</div>
           <div id="work-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>WORK EXPERIENCE</div>
           <div id="languages-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>LANGUAGES</div>

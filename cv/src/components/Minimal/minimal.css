@@ -1,4 +1,17 @@
 * {
   font-family: 'Fascinate', cursive;
 }
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.minimal-control-box__navbar-title {
+  cursor: pointer;
+}
+
+.minimal-control-box__navbar-title:hover {
+  color: #aaaaaa;
+}
 /*# sourceMappingURL=minimal.css.map */
