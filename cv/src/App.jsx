@@ -7,6 +7,7 @@ import {
 import './App.css';
 import CV from './constants/cv';
 import Home from './components/home';
+import Formal from './components/Formal';
 
 function App() {
   return (
@@ -16,6 +17,12 @@ function App() {
           path="/"
           element={
             <Home cv={CV} />
+              }
+        />
+        <Route
+          path="/formal"
+          element={
+            <Formal cv={CV} />
               }
         />
       </Routes>
