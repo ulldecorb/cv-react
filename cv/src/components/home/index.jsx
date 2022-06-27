@@ -26,7 +26,7 @@ function Home({ cv }) {
         <div>{cv.header.name}</div>
         <div>{cv.header.office}</div>
         <Link to="/pdf">pdf</Link>
-        <Link to="/formal">Formal</Link>
+        <Link to="/minimal">Minimal</Link>
         <Link to="/animated">animated</Link>
       </nav>
 
