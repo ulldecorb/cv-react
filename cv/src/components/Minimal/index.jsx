@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export function Formal({ cv }) {
+function Minimal({ cv }) {
   return (
     <h1>
       {cv.header.name}
@@ -9,7 +9,7 @@ export function Formal({ cv }) {
   );
 }
 
-Formal.propTypes = {
+Minimal.propTypes = {
   cv: PropTypes.shape({
     header: PropTypes.objectOf(PropTypes.string).isRequired,
     personal: PropTypes.objectOf(PropTypes.string).isRequired,
@@ -20,4 +20,4 @@ Formal.propTypes = {
   }).isRequired
 };
 
-export default Formal;
+export default Minimal;

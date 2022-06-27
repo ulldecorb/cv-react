@@ -6,8 +6,8 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import CV from './constants/cv';
-import Home from './components/home';
-import Formal from './components/Formal';
+import Home from './components/Home';
+import Minimal from './components/Minimal';
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
               }
         />
         <Route
-          path="/formal"
+          path="/minimal"
           element={
-            <Formal cv={CV} />
+            <Minimal cv={CV} />
               }
         />
       </Routes>
