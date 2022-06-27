@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import './home.css';
+import './minimal.css';
 
-function Home({ cv }) {
+function Minimal({ cv }) {
   const showProfile = (e) => {
     const articles = document.getElementById('profile').children;
     for (let i = 0; i < articles.length; i += 1) {
@@ -19,30 +18,18 @@ function Home({ cv }) {
     const box = document.getElementById(id);
     box.style.display = 'none';
   };
-
   return (
-    <main className="home">
-      <nav className="home__navbar">
-        <div>{cv.header.name}</div>
-        <div>{cv.header.office}</div>
-        <Link to="/pdf">pdf</Link>
-        <Link to="/minimal">Minimal</Link>
-        <Link to="/animated">animated</Link>
-      </nav>
+    <main>
 
       <section className="home__control-box">
-        <article className="control-box__image">
-          photo
-        </article>
-        <nav className="control-box__navbar-box">
-          <div id="about-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>ABOUT ME</div>
-          <div id="skills-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>SKILLS</div>
-          <div id="work-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>WORK EXPERIENCE</div>
-          <div id="languages-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>LANGUAGES</div>
-          <div id="education-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>EDUCATION</div>
+        <nav className="minimal-control-box__navbar-box">
+          <div id="about-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>ABOUT ME</div>
+          <div id="skills-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>SKILLS</div>
+          <div id="work-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>WORK EXPERIENCE</div>
+          <div id="languages-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>LANGUAGES</div>
+          <div id="education-handler" className="minimal-control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>EDUCATION</div>
         </nav>
       </section>
-
       <section id="profile" className="home__profile-box" onMouseLeave={(e) => hideProfiles(e)}>
         <article id="about" className="profile-box__article">{cv.aboutMe.description}</article>
         <article id="skills" className="profile-box__article">bla</article>
@@ -50,12 +37,11 @@ function Home({ cv }) {
         <article id="languages" className="profile-box__article">{cv.languages.catalan}</article>
         <article id="education" className="profile-box__article">{cv.education[0].article}</article>
       </section>
-
     </main>
   );
 }
 
-Home.propTypes = {
+Minimal.propTypes = {
   cv: PropTypes.shape({
     header: PropTypes.objectOf(PropTypes.string).isRequired,
     personal: PropTypes.objectOf(PropTypes.string).isRequired,
@@ -66,4 +52,4 @@ Home.propTypes = {
   }).isRequired
 };
 
-export default Home;
+export default Minimal;
