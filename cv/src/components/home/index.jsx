@@ -1,25 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { showProfile, hideProfiles } from '../../scripts/index';
 import './home.css';
 
 function Home({ cv }) {
-  const showProfile = (e) => {
-    const articles = document.getElementById('profile').children;
-    for (let i = 0; i < articles.length; i += 1) {
-      articles[i].style.display = 'none';
-    }
-    const id = e.target.id.split('-')[0];
-    const node = document.getElementById(id);
-    node.style.display = 'flex';
-  };
-
-  const hideProfiles = (e) => {
-    const { id } = e.target;
-    const box = document.getElementById(id);
-    box.style.display = 'none';
-  };
-
   return (
     <main className="home">
       <nav className="home__navbar">
