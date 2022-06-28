@@ -31,7 +31,7 @@ const CV = {
     {
       center: 'SKYLAB CODERS ACADEMY',
       task: 'JAVASCRIPT FULLSTACK DEVELOPER',
-      period: 'Januray 2021 - Present | Barcelona',
+      period: 'Januray 2021 - July 2021 | Barcelona',
       article: 'Web page applications that cover a wide range of scenarios: simple API call management, e-commerce shopping cart creation, TODO / CRUD lists and games. Application of SCRUM patterns and guarantee of unit tests.'
     },
     {
@@ -47,11 +47,11 @@ const CV = {
       article: 'User QA testing Rakuten TV app on diverse platforms. Apply, develop and improve UX & UI test. Reporting to IT department. Train new testers crew.'
     }
   ],
-  languages: {
-    catalan: 'native',
-    spanish: 'native',
-    english: 'B2'
-  }
+  languages: [
+    { language: 'catalan', level: 'native' },
+    { language: 'spanish', level: 'native' },
+    { language: 'english', level: 'B2' }
+  ]
 };
 
 export default CV;

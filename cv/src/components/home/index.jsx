@@ -62,7 +62,7 @@ Home.propTypes = {
     aboutMe: PropTypes.objectOf(PropTypes.string).isRequired,
     education: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
     workExperience: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
-    languages: PropTypes.objectOf(PropTypes.string).isRequired
+    languages: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired
   }).isRequired
 };
 
