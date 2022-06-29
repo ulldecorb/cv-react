@@ -4,3 +4,16 @@
     justify-content: $justify;
     align-items: $align;    
 }
+
+@mixin rotate ($spin-time) {
+    animation: spin infinite $spin-time linear;
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

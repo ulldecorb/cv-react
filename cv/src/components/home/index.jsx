@@ -13,6 +13,7 @@ function Home({ cv }) {
         <Link to="/pdf">pdf</Link>
         <Link to="/minimal">Minimal</Link>
         <Link to="/animated">animated</Link>
+        <a href="https://ulldecorb.github.io/cv-vanila/" target="_blank" rel="noreferrer">Disorder</a>
       </nav>
 
       <section className="home__control-box">
