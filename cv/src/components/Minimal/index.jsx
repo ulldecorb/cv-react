@@ -9,7 +9,7 @@ function Minimal({ cv }) {
 
       <nav className="minimal__control-box">
         {/* <nav className="minimal-control-box__navbar-box"> */}
-        <div id="about-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>AUSIAS BERTRAN</div>
+        <div id="about-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>{cv.header.name.toUpperCase()}</div>
         <div id="skills-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>SKILLS</div>
         <div id="work-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>WORK EXPERIENCE</div>
         <div id="languages-handler" className="control-box__navbar-title" onMouseEnter={(e) => showProfile(e)}>LANGUAGES</div>

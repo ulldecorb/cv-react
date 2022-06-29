@@ -7,7 +7,6 @@ body {
 }
 
 .minimal__control-box {
-  outline: 2px solid red;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,6 +67,6 @@ body {
 }
 
 .minimal__profile-box .profile-box__languages .languages {
-  margin-bottom: -20px;
+  margin: 0;
 }
 /*# sourceMappingURL=minimal.css.map */
