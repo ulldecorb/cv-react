@@ -48,9 +48,9 @@ const CV = {
     }
   ],
   languages: [
-    { language: 'catalan', level: 'native' },
-    { language: 'spanish', level: 'native' },
-    { language: 'english', level: 'B2' }
+    { language: 'Catalan', level: 'native' },
+    { language: 'Spanish', level: 'native' },
+    { language: 'English', level: 'B2' }
   ]
 };
 
